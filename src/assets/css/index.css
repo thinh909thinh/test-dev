@@ -1,0 +1,14 @@
+body {
+  margin: 0 !important;
+  font-family: "Poppins"!important;
+
+}
+img {
+  max-width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
