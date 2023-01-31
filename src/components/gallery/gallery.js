@@ -8,7 +8,6 @@ import Rectangle21 from "../../assets/img/Rectangle21.png";
 import Rectangle29 from "../../assets/img/Rectangle29.png";
 import Rectangle30 from "../../assets/img/Rectangle30.png";
 import Rectangle31 from "../../assets/img/Rectangle31.png";
-// import "./hi.css";
 function Gallery() {
   return (
     <>
