@@ -7,6 +7,7 @@ import Pen1 from "../../assets/img/pen1.png";
 import Pen2 from "../../assets/img/pen2.png";
 import Pen3 from "../../assets/img/pen3.png";
 import menuMobile from "../../assets/img/menuMobile.png";
+import menuDown from "../../assets/img/menuDown.png";
 import Group1 from "../../assets/img/Group1.png";
 
 export const Header = () => {
@@ -30,7 +31,7 @@ export const Header = () => {
   );
   return (
     <>
-      <div className="container   mx-auto my-0 bg-[#F4F4F4] ">
+      <div className="container   mx-auto my-0 bg-[#F4F4F4] rounded-b-[25px] ">
         {/* header  */}
         <div className="h-[120px] lg:h-[200px]  bg-[#ffffff] flex">
           <div className=" w-full lg:w-3/12 bg-[#F4F4F4] h-full flex lg:items-center justify-center rounded-t-[25px]">
@@ -80,7 +81,7 @@ export const Header = () => {
         </div>
         {/* content  */}
         <div className="h-[700px] lg:h-[500px]  flex w-full ">
-          <div className="lg:pt-[40px] pt-[11px] lg:mx-[4.166666666666666%] h-[93%] flex-col lg:flex-row bg-[#F4F4F4] w-full lg:h-full mb-[1px] flex justify-between">
+          <div className="lg:pt-[40px] pt-[11px] lg:mx-[4.166666666666666%] h-[93%] flex-col lg:flex-row rounded-b-[25px] bg-[#F4F4F4] w-full lg:h-full mb-[1px] flex justify-between">
             <div className="w-[320px] mx-auto lg:w-[31.818181818181817%]  lg:h-full">
               <div className="lg:text-Content font-normal hidden lg:block  lg:leading-32 not-italic mb-[20px]">
                 <p>
@@ -209,6 +210,66 @@ export const Header = () => {
               <div className="lg:hidden flex mx-auto mt-[39px] cursor-pointer w-[120px] h-[50px] bg-[#F4B840] rounded-[5px]  items-center justify-center font-bold leading-40 text-while">
                 SHOP ALL
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* menu 2  */}
+      <div className="container mx-auto lg:hidden">
+        {/* Markers  */}
+        <div className=" h-[100px]  mt-2.5 lg:mt-0 justify-center flex items-center rounded-[18px] bg-[#F4F4F4]">
+          <div
+            className="w-[368px]  lg:mx-[0px] lg:w-[235px] h-[80px] lg:h-[140px]  bg-[#ffffff] flex lg:flex-col 
+             items-center justify-between lg:justify-center rounded-[10px] shadow-3xl"
+          >
+            <div className="flex lg:flex-col items-center  ml-[30px] lg:ml-0">
+              <div className="w-[58px] h-[58px]  bg-[#F4F4F4] flex items-center justify-center rounded-full">
+                <img src={Vector1} alt="" />
+              </div>
+              <div className="text-Content font-bold pt-[4px] ml-5 lg:ml-0">
+                Markers
+              </div>
+            </div>
+            <div className="lg:hidden mr-[30px] ">
+              <img src={menuDown} alt="" />
+            </div>
+          </div>
+        </div>
+        {/* Drawing Colors */}
+        <div className=" h-[100px]  mt-2.5 lg:mt-0 justify-center flex items-center rounded-[18px] bg-[#F4F4F4]">
+          <div
+            className="w-[368px]  lg:mx-[0px] lg:w-[235px] h-[80px] lg:h-[140px]  bg-[#ffffff] flex lg:flex-col 
+             items-center justify-between lg:justify-center rounded-[10px] shadow-3xl"
+          >
+            <div className="flex lg:flex-col items-center  ml-[30px] lg:ml-0">
+              <div className="w-[58px] h-[58px]  bg-[#F4F4F4] flex items-center justify-center rounded-full">
+                <img src={Vector1} alt="" />
+              </div>
+              <div className="text-Content font-bold pt-[4px] ml-5 lg:ml-0">
+                Drawing Colors
+              </div>
+            </div>
+            <div className="lg:hidden mr-[30px] ">
+              <img src={menuDown} alt="" />
+            </div>
+          </div>
+        </div>
+        {/* Notebooks  */}
+        <div className=" h-[100px]  mt-2.5 lg:mt-0 justify-center flex items-center rounded-[18px] bg-[#F4F4F4]">
+          <div
+            className="w-[368px]  lg:mx-[0px] lg:w-[235px] h-[80px] lg:h-[140px]  bg-[#ffffff] flex lg:flex-col 
+             items-center justify-between lg:justify-center rounded-[10px] shadow-3xl"
+          >
+            <div className="flex lg:flex-col items-center  ml-[30px] lg:ml-0">
+              <div className="w-[58px] h-[58px]  bg-[#F4F4F4] flex items-center justify-center rounded-full">
+                <img src={Vector1} alt="" />
+              </div>
+              <div className="text-Content font-bold pt-[4px] ml-5 lg:ml-0">
+                Notebooks
+              </div>
+            </div>
+            <div className="lg:hidden mr-[30px] ">
+              <img src={menuDown} alt="" />
             </div>
           </div>
         </div>
