@@ -24,6 +24,7 @@
 
 }
 .menu-mb{
+  display: none;
   z-index: 1;
   transition: all 0.5s ease; 
   position: fixed;
@@ -178,6 +179,9 @@ footer div{
   .menu{
     display: none;
   }
+  .menu-mb{
+    display: block;
+  }
   .content{
     width: 100%;
   }
@@ -187,7 +191,7 @@ footer div{
   .menu-icon{
     display: block;
     position: absolute;
-    top: 30px;
+    top: 5px;
     left: 30px;
     cursor: pointer;
     width: 50px;
@@ -214,6 +218,26 @@ footer div{
   }
   .text-header-group1 {
     margin-bottom: 55px;
+}
+.logo{
+  margin: 0 auto;
+  width: 35%;
+}
+.group1 p {
+  width: 100%;
+}
+}
+
+
+@media screen  and (max-width : 420px){
+  .group1 {
+    height: 400px;
+  }
+  .text-header-group1 {
+    margin-bottom: 100px;
+}
+.group1 p {
+  width: 100%;
 }
 }
 
