@@ -1,12 +1,33 @@
+import react, { useState } from "react";
+
 import "./home.css";
 import logo from "../../assets/image/logoNCC1.png";
 import item1 from "../../assets/image/cssicon1.png";
-import item2 from "../../assets/image/logoNCC1.png";
-import item3 from "../../assets/image/logoNCC1.png";
+import item2 from "../../assets/image/icon2.png";
+import item3 from "../../assets/image/icon3.png";
+import menuIcon from "../../assets/image/menu-icon.jpg";
 function Home() {
+  const [open, setOpen] = useState(true);
   return (
     <>
+      {!open && (
+        <div className="menu-icon">
+          <img src={menuIcon} alt="" onClick={() => setOpen(true)} />
+        </div>
+      )}
       <div className="containers">
+        {open && (
+          <div className="menu-mb">
+            <div onClick={() => setOpen(false)} className="close">
+              X
+            </div>
+            <div className="menu-item text-white">Home</div>
+            <div className="menu-item">Services</div>
+            <div className="menu-item text-white active">News</div>
+            <div className="menu-item">Blog</div>
+            <div className="menu-item">Contact</div>
+          </div>
+        )}
         <div className="menu">
           <div className="menu-item text-white">Home</div>
           <div className="menu-item">Services</div>
@@ -14,6 +35,7 @@ function Home() {
           <div className="menu-item">Blog</div>
           <div className="menu-item">Contact</div>
         </div>
+
         <div className="content">
           <div className="logo">
             <img src={logo} alt="" />
@@ -57,7 +79,7 @@ function Home() {
               {/* box 2  */}
               <div className="group-item">
                 <div className="item">
-                  <img src={item1} alt="" className="img-item" />
+                  <img src={item2} alt="" className="img-item" />
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
                     non dui sodales, faucibus libero ut, posuere felis. Donec
@@ -74,7 +96,7 @@ function Home() {
               {/* box 3  */}
               <div className="group-item">
                 <div className="item">
-                  <img src={item1} alt="" className="img-item" />
+                  <img src={item3} alt="" className="img-item" />
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
                     non dui sodales, faucibus libero ut, posuere felis. Donec
